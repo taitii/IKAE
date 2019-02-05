@@ -1,6 +1,6 @@
 /*************************
 
-   1) GLOBAL SETTINGS
+   *) GLOBAL SETTINGS
 
 *************************/
 
@@ -24,4 +24,266 @@ body {
     --color-primary: #4a4a4a;
     --color-secondary: #f3f3f3;
     --color-tertiary: #B0A3A3;
+}
+
+/*************************
+
+   0) HEADINGS
+
+*************************/
+
+h1 {
+    text-transform: uppercase;
+    color: var(--color-primary);
+    font-size: 6rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: var(--color-primary);
+    font-size: 3rem;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: var(--color-primary);
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+
+/*************************
+
+   1) HEADER 
+
+*************************/
+
+.header {
+    min-width: 100%;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(134, 134, 134, 0.4),
+        rgba(133, 133, 133, 0.4)),
+        url(../img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    overflow-x: hidden;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 12rem;
+    padding: 3rem 8rem;
+}
+.logo-box {
+    min-width: 10rem;
+    height: 4rem;
+}
+.logo {
+    height: 100%;
+}
+.main-nav__items {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;     
+    width: auto;
+    height: 4rem;
+    list-style: none;
+}
+.main-nav__item {
+    margin: 0 1.5rem;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-tertiary);
+    transition: color .3s;
+}
+
+.main-nav__item a:hover,
+.main-nav__item a:active {
+    color: var(--color-primary);
+
+}
+
+.heading-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: -12rem;
+}
+
+
+.search-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/*************************
+
+   2) ABOUT US
+
+*************************/
+
+.about-us {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50rem;    
+    padding: 5rem 0;
+}
+
+.about-us__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90rem;
+    height: 100%;
+}
+
+.about__title-container {
+    display: flex;
+    width: 100%;
+    height: 7rem;
+}
+
+
+.about-us__wrapper {
+    display: flex;
+
+}
+
+.description-box {
+    flex: 0 0 33%;
+    /* height: 28.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;    
+}
+
+.description-box__header {
+    margin-bottom: 1.1rem;
+}
+
+
+.description-box__text {
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 2.5rem;
+    width: 90%;
+}
+
+.icon-box__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 7rem;   
+}
+
+
+.icon-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    align-items: space-between;    
+    height: 100%;
+    margin-top: 2rem;
+}
+
+.icon-box__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;      
+    width: 50%;  
+}
+
+.icon-box__icon {
+    min-height: 3.5rem;
+    max-width: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.icon-box__text {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: bold;    
+    text-transform: uppercase;
+    color: var(--color-primary);
+}
+
+.about-us__image {
+    width: 100%;
+    height: 100%;
+}
+
+/*************************
+
+   3) CATEGORIES
+
+*************************/
+
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+}
+
+.categories-header {
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    height: 10rem;
+    width: 90rem;
+}
+
+.categories-showcase {
+    display: flex;
+    height: 50rem;    
+}
+
+.categories-photos {
+    position: relative;
+    display: flex;
+    height: 100%;
+    flex: 1;
+	justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+.categories-photos:hover {
+    flex: 2;
+}
+
+.categories-photo {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.categories-photo__text {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+    position: absolute;
 }
