@@ -1,0 +1,27 @@
+/*************************
+
+   1) GLOBAL SETTINGS
+
+*************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Raleway", sans-serif;
+    
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --color-primary: #4a4a4a;
+    --color-secondary: #f3f3f3;
+    --color-tertiary: #B0A3A3;
+}
